@@ -1,0 +1,14 @@
+{"at":0,"kind":"authority","record":{"issuer":"reg","role":"regulator","site":"mine","category":"H","revision":1,"active":true}}
+{"at":0,"kind":"authority","record":{"issuer":"tech","role":"equipment","site":"mine","category":"H","revision":1,"active":true}}
+{"at":0,"kind":"authority","record":{"issuer":"sales","role":"commercial","site":"mine","category":"H","revision":1,"active":true}}
+{"at":1,"kind":"clause","record":{"issuer":"tech","clause":"fit","rev":1,"kind":"offer","site":"mine","category":"H","purpose":"hire","battery":"pack","required_credentials":["agreement"],"until":35}}
+{"at":2,"kind":"clause","record":{"issuer":"sales","clause":"temporary","rev":1,"kind":"exception","related":"fit","site":"mine","category":"H","purpose":"hire","battery":"pack","waive":["agreement"],"until":20}}
+{"at":3,"kind":"completeness","record":{"store":"s1","site":"mine","category":"H","complete":true}}
+{"at":4,"kind":"request","record":{"store":"s1","id":"r1","site":"mine","category":"H","purpose":"hire","battery":"pack","credentials":[]}}
+{"at":5,"kind":"commit","record":{"store":"s1","request":"r1","promise":"p1","expires":30}}
+{"at":6,"kind":"notify_stop","record":{"issuer":"tech","clause":"fit","rev":1,"reason":"lot hold"}}
+{"at":7,"kind":"completeness","record":{"store":"s2","site":"mine","category":"H","complete":false}}
+{"at":8,"kind":"redeem","record":{"store":"s2","promise":"p1","site":"mine"}}
+{"at":9,"kind":"completeness","record":{"store":"s2","site":"mine","category":"H","complete":true}}
+{"at":10,"kind":"redeem","record":{"store":"s2","promise":"p1","site":"mine"}}
+{"at":11,"kind":"inspect","record":{"promise":"p1"}}
